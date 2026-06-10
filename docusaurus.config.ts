@@ -7,8 +7,8 @@ const config: Config = {
   tagline: 'Documentation for the EtherCAT module family, Linux master software, and hardware integration',
   favicon: 'img/favicon.svg',
 
-  url: 'https://lynxtechs.com',
-  baseUrl: '/docs/',
+  url: 'https://docs.lynxtechs.com',
+  baseUrl: '/',
 
   organizationName: 'Lynx-Robotics-LLC',
   projectName: 'lynxtechsdocs',
