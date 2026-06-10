@@ -1,0 +1,9 @@
+{
+  "label": "Master Software",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "title": "Master Software",
+    "description": "Our Linux EtherCAT master software: introduction, installation, and usage."
+  }
+}

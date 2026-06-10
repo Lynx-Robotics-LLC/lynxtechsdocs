@@ -1,0 +1,9 @@
+{
+  "label": "Hardware",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "title": "Hardware Integration",
+    "description": "How to integrate the EtherCAT hardware modules into your own PCB."
+  }
+}

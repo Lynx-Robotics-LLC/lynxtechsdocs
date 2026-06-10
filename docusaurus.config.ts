@@ -1,0 +1,108 @@
+import {themes as prismThemes} from 'prism-react-renderer';
+import type {Config} from '@docusaurus/types';
+import type * as Preset from '@docusaurus/preset-classic';
+
+const config: Config = {
+  title: 'EtherCAT Module Docs',
+  tagline: 'Documentation for the EtherCAT module family, Linux master software, and hardware integration',
+  favicon: 'img/favicon.svg',
+
+  url: 'https://your-docs-site.example.com',
+  baseUrl: '/',
+
+  organizationName: 'your-org',
+  projectName: 'ethercat-module-docs',
+
+  onBrokenLinks: 'throw',
+
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
+    },
+  },
+
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en'],
+  },
+
+  presets: [
+    [
+      'classic',
+      {
+        docs: {
+          sidebarPath: './sidebars.ts',
+          routeBasePath: '/',
+          editUrl: 'https://github.com/your-org/ethercat-module-docs/tree/main/',
+        },
+        blog: false,
+        theme: {
+          customCss: './src/css/custom.css',
+        },
+      } satisfies Preset.Options,
+    ],
+  ],
+
+  themeConfig: {
+    image: 'img/social-card.jpg',
+    navbar: {
+      title: 'EtherCAT Module',
+      logo: {
+        alt: 'EtherCAT Module Logo',
+        src: 'img/logo.svg',
+      },
+      items: [
+        {
+          type: 'docSidebar',
+          sidebarId: 'docsSidebar',
+          position: 'left',
+          label: 'Docs',
+        },
+        {
+          href: 'https://github.com/your-org/ethercat-module-docs',
+          label: 'GitHub',
+          position: 'right',
+        },
+      ],
+    },
+    footer: {
+      style: 'dark',
+      links: [
+        {
+          title: 'Docs',
+          items: [
+            {
+              label: 'EtherCAT Basics',
+              to: '/ethercat-basics/overview',
+            },
+            {
+              label: 'Master Software',
+              to: '/master-software/introduction',
+            },
+            {
+              label: 'Hardware',
+              to: '/hardware/overview',
+            },
+          ],
+        },
+        {
+          title: 'More',
+          items: [
+            {
+              label: 'GitHub',
+              href: 'https://github.com/your-org/ethercat-module-docs',
+            },
+          ],
+        },
+      ],
+      copyright: `Copyright © ${new Date().getFullYear()} Your Company. Built with Docusaurus.`,
+    },
+    prism: {
+      theme: prismThemes.github,
+      darkTheme: prismThemes.dracula,
+      additionalLanguages: ['cpp', 'bash', 'cmake'],
+    },
+  } satisfies Preset.ThemeConfig,
+};
+
+export default config;
