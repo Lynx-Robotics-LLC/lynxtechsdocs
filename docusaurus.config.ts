@@ -7,11 +7,12 @@ const config: Config = {
   tagline: 'Documentation for the EtherCAT module family, Linux master software, and hardware integration',
   favicon: 'img/favicon.svg',
 
-  url: 'https://your-docs-site.example.com',
-  baseUrl: '/',
+  url: 'https://lynxtechs.com',
+  baseUrl: '/docs/',
 
-  organizationName: 'your-org',
-  projectName: 'ethercat-module-docs',
+  organizationName: 'Lynx-Robotics-LLC',
+  projectName: 'lynxtechsdocs',
+  trailingSlash: false,
 
   onBrokenLinks: 'throw',
 
@@ -44,7 +45,7 @@ const config: Config = {
         docs: {
           sidebarPath: './sidebars.ts',
           routeBasePath: '/',
-          editUrl: 'https://github.com/your-org/ethercat-module-docs/tree/main/',
+          editUrl: 'https://github.com/Lynx-Robotics-LLC/lynxtechsdocs/tree/main/',
         },
         blog: false,
         theme: {
@@ -70,7 +71,7 @@ const config: Config = {
           label: 'Docs',
         },
         {
-          href: 'https://github.com/your-org/ethercat-module-docs',
+          href: 'https://github.com/Lynx-Robotics-LLC/lynxtechsdocs',
           label: 'GitHub',
           position: 'right',
         },
@@ -101,7 +102,7 @@ const config: Config = {
           items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/your-org/ethercat-module-docs',
+              href: 'https://github.com/Lynx-Robotics-LLC/lynxtechsdocs',
             },
           ],
         },
