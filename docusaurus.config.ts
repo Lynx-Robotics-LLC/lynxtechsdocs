@@ -26,6 +26,17 @@ const config: Config = {
     locales: ['en'],
   },
 
+  themes: [
+    [
+      '@easyops-cn/docusaurus-search-local',
+      {
+        hashed: true,
+        docsRouteBasePath: '/',
+        searchBarPosition: 'right',
+      },
+    ],
+  ],
+
   presets: [
     [
       'classic',
