@@ -7,6 +7,8 @@ title: Overview
 
 > Sample content. Replace with the real module specifications and part numbers.
 
+![Beckhoff EK1100 EtherCAT Coupler](./18_11_2022_17_59_15_EK1100_Beckhoff.png)
+
 The EtherCAT hardware modules are compact, solderable system-on-modules (SoMs)
 that add a ready-to-use EtherCAT device interface to your product. You bring the
 application electronics; the module handles the EtherCAT communication.
